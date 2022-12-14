@@ -38,6 +38,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <backgroundConfiguration key="background" image="choice1Background"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHN-dD-09a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlR-ze-b2C">
                                         <rect key="frame" x="0.0" y="659" width="361" height="100"/>
@@ -49,6 +52,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <backgroundConfiguration key="background" image="choice2Background"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAZ-e6-Kct"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -66,6 +72,11 @@
                             <constraint firstItem="VhC-So-PmA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gVe-Lc-6v9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chooseOption1Button" destination="Lpq-ZE-wI8" id="v2m-Q8-dy9"/>
+                        <outlet property="chooseOpttion2Button" destination="GlR-ze-b2C" id="jji-3b-G4l"/>
+                        <outlet property="desniQuestionLabel" destination="w1y-KM-s2u" id="AYE-F0-OiK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
